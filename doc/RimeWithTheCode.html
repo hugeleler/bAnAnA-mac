@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>代码 · 小香蕉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<nav><h2>小香蕉</h2>
+<div><a href="index.html">首页</a></div>
+<div><a href="Introduction.html">简介</a></div>
+<div><a href="GettingStarted.html">入门</a></div>
+<div><a href="Downloads.html">下载与安装</a></div>
+<div><a href="UserGuide.html">说明书</a></div>
+<div><a href="FAQ.html">常见问题</a></div>
+<h2>目录与配置</h2>
+<div><a href="UserData.html">用户文件夹</a></div>
+<div><a href="SharedData.html">共享文件夹</a></div>
+<div><a href="Configuration.html">配置文件</a></div>
+<div><a href="CustomizationGuide.html">定制</a></div>
+<div><a href="RimeWithSchemata.html">输入方案</a></div>
+<div><a href="SpellingAlgebra.html">拼写运算</a></div>
+<div><a href="DictionaryPack.html">词典扩展包</a></div>
+<div><a href="Recipes.html">配方</a></div>
+<div><a href="ComboPinyin.html">并击</a></div>
+<h2>前端</h2>
+<div><a href="RimeWithSquirrel.html">macOS 前端</a></div>
+<div><a href="RimeWithWeasel.html">Windows 端</a></div>
+<div><a href="RimeWithTheDesign.html">设计</a></div>
+<div><a href="RimeWithTheCode.html">代码</a></div>
+<div><a href="RimeWithIBus.html">IBus</a></div>
+<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>发布</h2>
+<div><a href="SquirrelReleaseManual.html">macOS 发布说明</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
+<div><a href="UserQuotes.html">反馈</a></div>
+<div><a href="MoodCollection.html">记事</a></div></nav>
+<main>
+<h1>代码</h1>
+<p>小香蕉的 macOS 前端源码在仓库的 <code>mac/</code>，Windows 前端在 <code>windows/</code>，方案和词库在 <code>data/</code>。</p>
+<p>macOS 工程是 <code>mac/bAnAnA.xcodeproj</code>。和输入直接相关的路径：</p>
+<ul>
+<li>应用入口和用户目录：<code>mac/sources/Main.swift</code>。用户目录固定为 <code>~/Library/bAnAnA</code>。</li>
+<li>菜单、部署、更新、在线文档：<code>mac/sources/bAnAnAApplicationDelegate.swift</code>。</li>
+<li>按键和候选：<code>mac/sources/bAnAnAInputController.swift</code>。</li>
+</ul>
+<p>在线文档菜单打开的就是本维基。更新频道的地址写在 <code>mac/resources/Info.plist</code> 的 <code>SUFeedURL</code>，指向 GitHub Pages，不指向 main 分支。</p>
+<p>改按键处理时保持现有的按键传递顺序。Caps Lock 要在改变锁定状态之前交给系统。带 Command 的组合键应交回系统，而不是当成编码。</p>
+<p>引擎源码不在这个前端仓库里改产品行为。方案能表达的，用方案和补丁表达。</p>
+</main>
+</div>
+</body>
+</html>

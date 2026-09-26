@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常见问题 · 小香蕉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<nav><h2>小香蕉</h2>
+<div><a href="index.html">首页</a></div>
+<div><a href="Introduction.html">简介</a></div>
+<div><a href="GettingStarted.html">入门</a></div>
+<div><a href="Downloads.html">下载与安装</a></div>
+<div><a href="UserGuide.html">说明书</a></div>
+<div><a href="FAQ.html">常见问题</a></div>
+<h2>目录与配置</h2>
+<div><a href="UserData.html">用户文件夹</a></div>
+<div><a href="SharedData.html">共享文件夹</a></div>
+<div><a href="Configuration.html">配置文件</a></div>
+<div><a href="CustomizationGuide.html">定制</a></div>
+<div><a href="RimeWithSchemata.html">输入方案</a></div>
+<div><a href="SpellingAlgebra.html">拼写运算</a></div>
+<div><a href="DictionaryPack.html">词典扩展包</a></div>
+<div><a href="Recipes.html">配方</a></div>
+<div><a href="ComboPinyin.html">并击</a></div>
+<h2>前端</h2>
+<div><a href="RimeWithSquirrel.html">macOS 前端</a></div>
+<div><a href="RimeWithWeasel.html">Windows 端</a></div>
+<div><a href="RimeWithTheDesign.html">设计</a></div>
+<div><a href="RimeWithTheCode.html">代码</a></div>
+<div><a href="RimeWithIBus.html">IBus</a></div>
+<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>发布</h2>
+<div><a href="SquirrelReleaseManual.html">macOS 发布说明</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
+<div><a href="UserQuotes.html">反馈</a></div>
+<div><a href="MoodCollection.html">记事</a></div></nav>
+<main>
+<h1>常见问题</h1>
+<h2>菜单里有小香蕉，但系统设置的键盘列表里没有</h2>
+<p>当前包是临时签名，没有 Developer ID，也没有公证。系统设置会隐藏被 Gatekeeper 拒绝的输入法。这不是皮肤或词库的问题。要出现在系统设置里，需要用 Developer ID 签名并对安装包公证。</p>
+<h2>检查更新说已经是最新版，但没有「版本历史记录」</h2>
+<p>「版本历史记录」只在更新频道最新一条带有发布说明链接时出现。说明页是：</p>
+<p>https://hugeleler.github.io/bAnAnA-mac/changelog.html</p>
+<p>频道文件不在 main 分支。若客户端仍在请求 main 上的旧地址，那个地址已经删除，检查会失败。已安装的 1.1.2 需要把更新地址指到上面的 github.io 链接。</p>
+<h2>和鼠须管互相抢配置</h2>
+<p>确认小香蕉的用户目录是 <code>~/Library/bAnAnA</code>，并且里面有自己的 <code>installation.yaml</code>。若两个进程曾经共用一个目录，先退出其中一个，再各自重新部署。</p>
+<h2>换了皮肤没有变化</h2>
+<p>「更换皮肤」写的是 <code>mac.custom.yaml</code> 里的 <code>style/color_scheme</code> 和 <code>style/color_scheme_dark</code>。只改其中一个时，亮色和暗色会不一致。改完要部署成功。看菜单是否提示「部署完成。」</p>
+<h2>部署失败</h2>
+<p>打开「日志...」。常见原因是 yaml 缩进错了，或补丁的键路径不存在。先恢复最后一次改动，再重新部署。</p>
+</main>
+</div>
+</body>
+</html>

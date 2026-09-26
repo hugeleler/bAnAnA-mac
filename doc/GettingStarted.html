@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>入门 · 小香蕉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<nav><h2>小香蕉</h2>
+<div><a href="index.html">首页</a></div>
+<div><a href="Introduction.html">简介</a></div>
+<div><a href="GettingStarted.html">入门</a></div>
+<div><a href="Downloads.html">下载与安装</a></div>
+<div><a href="UserGuide.html">说明书</a></div>
+<div><a href="FAQ.html">常见问题</a></div>
+<h2>目录与配置</h2>
+<div><a href="UserData.html">用户文件夹</a></div>
+<div><a href="SharedData.html">共享文件夹</a></div>
+<div><a href="Configuration.html">配置文件</a></div>
+<div><a href="CustomizationGuide.html">定制</a></div>
+<div><a href="RimeWithSchemata.html">输入方案</a></div>
+<div><a href="SpellingAlgebra.html">拼写运算</a></div>
+<div><a href="DictionaryPack.html">词典扩展包</a></div>
+<div><a href="Recipes.html">配方</a></div>
+<div><a href="ComboPinyin.html">并击</a></div>
+<h2>前端</h2>
+<div><a href="RimeWithSquirrel.html">macOS 前端</a></div>
+<div><a href="RimeWithWeasel.html">Windows 端</a></div>
+<div><a href="RimeWithTheDesign.html">设计</a></div>
+<div><a href="RimeWithTheCode.html">代码</a></div>
+<div><a href="RimeWithIBus.html">IBus</a></div>
+<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>发布</h2>
+<div><a href="SquirrelReleaseManual.html">macOS 发布说明</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
+<div><a href="UserQuotes.html">反馈</a></div>
+<div><a href="MoodCollection.html">记事</a></div></nav>
+<main>
+<h1>入门</h1>
+<h2>安装</h2>
+<p>下载 <a href="https://github.com/hugeleler/bAnAnA-mac/releases/tag/v1.1.2">小香蕉 1.1.2</a> 的 pkg，打开安装器。安装结束后，输入法位于：</p>
+<p><code>/Library/Input Methods/bAnAnA.app</code></p>
+<p>在菜单栏输入法菜单里选择「小香蕉」。简体输入源 id 是 <code>im.banana.inputmethod.bAnAnA.Hans</code>，繁体是 <code>im.banana.inputmethod.bAnAnA.Hant</code>。</p>
+<p>当前安装包尚未使用 Developer ID 签名，也未公证。macOS 的 Gatekeeper 会拦住未签名安装包的直接打开。系统设置里的键盘列表也可能不列出未通过 Gatekeeper 的输入法。签名和公证的说明见 <a href="SquirrelReleaseManual.html">macOS 发布说明</a>。</p>
+<h2>第一次输入</h2>
+<p>1. 切到小香蕉。</p>
+<p>2. 输入拼音，空格或数字上屏。</p>
+<p>3. 需要改外观时，点输入法菜单里的「更换皮肤」。</p>
+<p>4. 改完用户目录里的 yaml 后，点「重新部署」。</p>
+<h2>菜单</h2>
+<table><tbody>
+<tr><th>菜单</th><th>作用</th></tr>
+<tr><td>更换皮肤</td><td>弹出皮肤列表，写入 <code>mac.custom.yaml</code> 的亮色和暗色方案</td></tr>
+<tr><td>重新部署</td><td>重新编译方案和词库</td></tr>
+<tr><td>同步用户数据</td><td>按用户目录里的同步设定合并词典快照</td></tr>
+<tr><td>日志...</td><td>打开本次运行的日志目录</td></tr>
+<tr><td>用户设定...</td><td>打开 <code>~/Library/bAnAnA</code></td></tr>
+<tr><td>在线文档...</td><td>打开本维基</td></tr>
+<tr><td>检查新版本...</td><td>读取更新频道，和当前版本比较</td></tr>
+</tbody></table>
+<p>检查新版本不会在后台自动跑。只有点这个菜单才会请求更新频道。</p>
+</main>
+</div>
+</body>
+</html>

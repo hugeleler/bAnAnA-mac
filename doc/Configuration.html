@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>配置文件 · 小香蕉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<nav><h2>小香蕉</h2>
+<div><a href="index.html">首页</a></div>
+<div><a href="Introduction.html">简介</a></div>
+<div><a href="GettingStarted.html">入门</a></div>
+<div><a href="Downloads.html">下载与安装</a></div>
+<div><a href="UserGuide.html">说明书</a></div>
+<div><a href="FAQ.html">常见问题</a></div>
+<h2>目录与配置</h2>
+<div><a href="UserData.html">用户文件夹</a></div>
+<div><a href="SharedData.html">共享文件夹</a></div>
+<div><a href="Configuration.html">配置文件</a></div>
+<div><a href="CustomizationGuide.html">定制</a></div>
+<div><a href="RimeWithSchemata.html">输入方案</a></div>
+<div><a href="SpellingAlgebra.html">拼写运算</a></div>
+<div><a href="DictionaryPack.html">词典扩展包</a></div>
+<div><a href="Recipes.html">配方</a></div>
+<div><a href="ComboPinyin.html">并击</a></div>
+<h2>前端</h2>
+<div><a href="RimeWithSquirrel.html">macOS 前端</a></div>
+<div><a href="RimeWithWeasel.html">Windows 端</a></div>
+<div><a href="RimeWithTheDesign.html">设计</a></div>
+<div><a href="RimeWithTheCode.html">代码</a></div>
+<div><a href="RimeWithIBus.html">IBus</a></div>
+<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>发布</h2>
+<div><a href="SquirrelReleaseManual.html">macOS 发布说明</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
+<div><a href="UserQuotes.html">反馈</a></div>
+<div><a href="MoodCollection.html">记事</a></div></nav>
+<main>
+<h1>配置文件</h1>
+<p>小香蕉的配置是 UTF-8 的 YAML。</p>
+<h2>两类文件</h2>
+<ul>
+<li>发布文件：<code>banana.schema.yaml</code>、<code>mac.yaml</code>、词典。随应用放在共享目录。</li>
+<li>用户补丁：同名的 <code>.custom.yaml</code>，放在 <code>~/Library/bAnAnA</code>。</li>
+</ul>
+<p>补丁的根节点是 <code>patch</code>。键用斜线表示层级，例如 <code>style/color_scheme</code> 对应 <code>style</code> 下面的 <code>color_scheme</code>。</p>
+<h2>加载顺序</h2>
+<p>同名配置先读共享目录，再用用户目录里的补丁覆盖。用户目录里一份完整的同名 yaml 也会参与覆盖。因此鼠须管目录里的文件不会影响小香蕉。</p>
+<p>列表可以用补丁追加、删除或按位置替换。具体指令以引擎接受的补丁语法为准：<code>__append</code>、<code>__prepend</code>、<code>__merge</code> 这一类键写在被修改的列表旁边。不确定时，先只改一个标量，部署，看日志，再改列表。</p>
+<h2>包含</h2>
+<p>一个 yaml 可以用包含把另一份配置拉进来，避免把整份方案复制一份。包含进来的文件仍然经过同一套补丁。改公共组件时，只改那一个组件的补丁。</p>
+<h2>编译</h2>
+<p>方案和词典在部署时编译到用户目录的 <code>build/</code>。编译失败时菜单会提示查看日志。日志里的文件名就是出错的 yaml 或词典。</p>
+<h2>不要混用的名字</h2>
+<ul>
+<li>前端皮肤：macOS 用 <code>mac</code>，Windows 用 <code>windows</code>。</li>
+<li>引擎内部的应用名是 <code>banana</code>。它决定用户数据子路径的逻辑名，不决定菜单上的「小香蕉」三个字。菜单上的名字来自应用的本地化显示名。</li>
+</ul>
+</main>
+</div>
+</body>
+</html>

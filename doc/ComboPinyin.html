@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>并击 · 小香蕉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<nav><h2>小香蕉</h2>
+<div><a href="index.html">首页</a></div>
+<div><a href="Introduction.html">简介</a></div>
+<div><a href="GettingStarted.html">入门</a></div>
+<div><a href="Downloads.html">下载与安装</a></div>
+<div><a href="UserGuide.html">说明书</a></div>
+<div><a href="FAQ.html">常见问题</a></div>
+<h2>目录与配置</h2>
+<div><a href="UserData.html">用户文件夹</a></div>
+<div><a href="SharedData.html">共享文件夹</a></div>
+<div><a href="Configuration.html">配置文件</a></div>
+<div><a href="CustomizationGuide.html">定制</a></div>
+<div><a href="RimeWithSchemata.html">输入方案</a></div>
+<div><a href="SpellingAlgebra.html">拼写运算</a></div>
+<div><a href="DictionaryPack.html">词典扩展包</a></div>
+<div><a href="Recipes.html">配方</a></div>
+<div><a href="ComboPinyin.html">并击</a></div>
+<h2>前端</h2>
+<div><a href="RimeWithSquirrel.html">macOS 前端</a></div>
+<div><a href="RimeWithWeasel.html">Windows 端</a></div>
+<div><a href="RimeWithTheDesign.html">设计</a></div>
+<div><a href="RimeWithTheCode.html">代码</a></div>
+<div><a href="RimeWithIBus.html">IBus</a></div>
+<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>发布</h2>
+<div><a href="SquirrelReleaseManual.html">macOS 发布说明</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
+<div><a href="UserQuotes.html">反馈</a></div>
+<div><a href="MoodCollection.html">记事</a></div></nav>
+<main>
+<h1>并击</h1>
+<p>并击是在很短的时间窗里把同时按下的一组键当成一个音节，而不是按先后顺序逐键拼写。</p>
+<p>小香蕉的 macOS 前端保留了这个时间窗，配置项在 <code>mac.yaml</code>：</p>
+<pre><code>
+chord_duration: 0.1
+</code></pre>
+<p>单位是秒。要改它，写到 <code>~/Library/bAnAnA/mac.custom.yaml</code> 的 <code>patch</code> 里，然后重新部署。方案侧仍然要有对应的并击方案，只改时间窗不会把全拼方案变成并击方案。</p>
+<p>Windows 端的皮肤文件是 <code>windows.yaml</code>，不要把这项只写在 <code>mac.yaml</code> 里就指望 Windows 生效。</p>
+</main>
+</div>
+</body>
+</html>
