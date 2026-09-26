@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>macOS 前端 · 小香蕉</title>
+<title>macOS 发布说明 · 小香蕉</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,31 +26,31 @@
 <div><a href="Recipes.html">配方</a></div>
 <div><a href="ComboPinyin.html">并击</a></div>
 <h2>前端</h2>
-<div><a href="RimeWithSquirrel.html">macOS 前端</a></div>
+<div><a href="bAnAnAMac.html">macOS 前端</a></div>
 <div><a href="RimeWithWeasel.html">Windows 端</a></div>
 <div><a href="RimeWithTheDesign.html">设计</a></div>
 <div><a href="RimeWithTheCode.html">代码</a></div>
 <div><a href="RimeWithIBus.html">IBus</a></div>
 <div><a href="Rime-in-Emacs.html">Emacs</a></div>
 <h2>发布</h2>
-<div><a href="SquirrelReleaseManual.html">macOS 发布说明</a></div>
+<div><a href="bAnAnAMacReleaseManual.html">macOS 发布说明</a></div>
 <div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
 <div><a href="UserQuotes.html">反馈</a></div>
 <div><a href="MoodCollection.html">记事</a></div></nav>
 <main>
-<h1>macOS 前端</h1>
-<p>这一页对应「在 macOS 上使用和编译输入法」。产品名是小香蕉，不是鼠须管。</p>
-<h2>使用</h2>
-<p>安装、切换、菜单和用户目录见 <a href="GettingStarted.html">入门</a> 与 <a href="UserData.html">用户文件夹</a>。</p>
-<p>外观只看 <code>mac.yaml</code> / <code>mac.custom.yaml</code>。</p>
-<h2>从源码编译</h2>
-<p>在 <code>mac/</code> 目录：</p>
-<pre><code>
-xcodebuild -project bAnAnA.xcodeproj -configuration Release -scheme bAnAnA -derivedDataPath build ARCHS=arm64 ONLY_ACTIVE_ARCH=YES build
-</code></pre>
-<p>产物是 <code>mac/build/Build/Products/Release/bAnAnA.app</code>。</p>
-<p>安装到 <code>/Library/Input Methods/</code> 需要管理员权限。替换已安装的应用时，保留包内的 SharedSupport，除非这次修改确实包含词库。替换后需要重新签名。没有 Developer ID 时只能临时签名，系统设置的键盘列表不会把它当作可分发的输入法。</p>
-<p>不要和鼠须管共用 <code>~/Library/Rime</code>。</p>
+<h1>macOS 发布说明</h1>
+<h2>版本怎么比较</h2>
+<p>安装包里的版本号是 <code>CFBundleVersion</code>。更新频道里每一条的 <code>sparkle:version</code> 与它比较。两个字符串相同，检查结果就是「当前已是最新版本」，不会下载。</p>
+<p>频道地址：</p>
+<p>https://hugeleler.github.io/bAnAnA-mac/appcast.xml</p>
+<p>这个文件和更新记录只在仓库的 <code>gh-pages</code> 分支，页面由 GitHub Pages 提供。<code>main</code> 分支不放这两份文件。</p>
+<p>最新一条带有发布说明链接时，检查更新的对话框才出现「版本历史记录」。说明页：</p>
+<p>https://hugeleler.github.io/bAnAnA-mac/changelog.html</p>
+<p>安装包下载地址在 GitHub Release，不在 <code>gh-pages</code>。频道只描述版本、说明链接和安装包的地址、长度与签名。</p>
+<h2>当前版本</h2>
+<p>1.1.2。安装包 <code>bAnAnA-1.1.2.pkg</code>。最低系统 macOS 13。用户目录 <code>~/Library/bAnAnA</code>。</p>
+<h2>签名</h2>
+<p>分发给别人之前，应用和 pkg 都要用 Developer ID 签名，再用 Apple 的公证服务盖章。只有临时签名的包不能当作正式发布。公证通过不等于可以上架 Mac App Store。小香蕉走 Developer ID 安装包，不走 App Store。原因见仓库许可证：GPL-3.0 的前端不能改成专有软件再上架。</p>
 </main>
 </div>
 </body>
