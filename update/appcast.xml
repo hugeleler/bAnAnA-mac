@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
 <channel>
-    <title>小香蕉 macOS</title>
+    <title>小香蕉 macOS 更新频道</title>
     <link>https://github.com/hugeleler/bAnAnA-mac/releases</link>
     <description>bAnAnA for Mac</description>
     <language>zh-Hans</language>
+    <item>
+        <title>小香蕉 1.1.2</title>
+        <sparkle:version>1.1.2</sparkle:version>
+        <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+        <pubDate>2026-09-27T01:23:00+08:00</pubDate>
+        <sparkle:releaseNotesLink>https://raw.githubusercontent.com/hugeleler/bAnAnA-mac/main/update/changelog.html</sparkle:releaseNotesLink>
+        <sparkle:fullReleaseNotesLink>https://raw.githubusercontent.com/hugeleler/bAnAnA-mac/main/update/changelog.html</sparkle:fullReleaseNotesLink>
+        <description><![CDATA[
+            <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
+                Ver. 1.1.2<br>
+                <br>
+                - macOS 安装包 bAnAnA-1.1.2.pkg，安装到 /Library/Input Methods；<br>
+                - 用户设定目录为 ~/Library/bAnAnA，与鼠须管分开；<br>
+                - 输入法菜单提供「更换皮肤」；<br>
+                - 菜单中的显示名称为「小香蕉」。
+            </div>
+        ]]></description>
+        <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2/bAnAnA-1.1.2.pkg"
+                   sparkle:version="1.1.2"
+                   sparkle:shortVersionString="1.1.2"
+                   sparkle:edSignature="QV5E75U5pmQbMjH5in0TImgM/Y8MMBoerK0+Gip75tsdP2i/aYkuFLSSDPDgM5HK3BNAAd5Ml7gY2oKoFR1aCA=="
+                   length="419009917"
+                   type="application/octet-stream"/>
+    </item>
 </channel>
 </rss>
