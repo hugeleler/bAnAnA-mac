@@ -10,6 +10,13 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 pre { padding: 12px 14px; overflow: auto; background: rgba(127,127,127,.12); }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; vertical-align: top; }
+table.platforms { width: 100%; }
+table.platforms th:nth-child(1),
+table.platforms td:nth-child(1) { min-width: 9em; white-space: nowrap; }
+table.platforms th:nth-child(2),
+table.platforms td:nth-child(2) { min-width: 8em; white-space: nowrap; }
+table.platforms th:nth-child(3),
+table.platforms td:nth-child(3) { min-width: 16em; }
 a { color: inherit; }
 @media (max-width: 800px) {
   .layout { display: block; }
