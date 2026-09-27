@@ -10,7 +10,7 @@
         <sparkle:version>1.1.2.2</sparkle:version>
         <sparkle:shortVersionString>1.1.2.2</sparkle:shortVersionString>
         <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-        <pubDate>2026-09-27T18:14:00+08:00</pubDate>
+        <pubDate>2026-09-27T18:49:00+08:00</pubDate>
         <sparkle:releaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:releaseNotesLink>
         <sparkle:fullReleaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:fullReleaseNotesLink>
         <description><![CDATA[
@@ -26,8 +26,8 @@
         <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.2/bAnAnA-1.1.2.2.pkg"
                    sparkle:version="1.1.2.2"
                    sparkle:shortVersionString="1.1.2.2"
-                   sparkle:edSignature="q9EGOQpGzDjkSJoUGqwZmDC35QK+KLf8GrLfyK31fxWOQV1xFf35h4FY8Kb8OUTheftyeSNOCuQnpSs4lXxkBg=="
-                   length="112109281"
+                   sparkle:edSignature="vpJ8oHUN9KwOiLvjPYaM59ZBPNPbRh675JvH5KMN8cuCHRrvQhQovDyHlqqu4i0L0mEexlhN6WgUop9lsj8/Bw=="
+                   length="112110434"
                    type="application/octet-stream"/>
     </item>
     <item>
