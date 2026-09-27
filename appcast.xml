@@ -39,11 +39,10 @@
             <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
                 Ver. 1.1.2.0<br>
                 <br>
-                - 原 1.1.2 发行版，版本号改为 1.1.2.0；<br>
-                - 安装包文件名仍是 bAnAnA-1.1.2.pkg。
+                - 安装包 bAnAnA-1.1.2.0.pkg。
             </div>
         ]]></description>
-        <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2/bAnAnA-1.1.2.pkg"
+        <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.0/bAnAnA-1.1.2.0.pkg"
                    sparkle:version="1.1.2.0"
                    sparkle:shortVersionString="1.1.2.0"
                    length="411899012"
