@@ -17,15 +17,15 @@
             <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
                 Ver. 1.1.2<br>
                 <br>
-                - macOS 安装包 bAnAnA-1.1.2.pkg，安装 BananaRust.app 到 /Library/Input Methods；<br>
-                - 用户设定目录为 ~/Library/bAnAnA-rust；<br>
+                - macOS 安装包 bAnAnA-1.1.2.pkg，安装 bAnAnA.app 到 /Library/Input Methods；<br>
+                - 用户设定目录为 ~/Library/bAnAnA；<br>
                 - 检查更新读取 https://hugeleler.github.io/bAnAnA-mac/appcast.xml。
             </div>
         ]]></description>
         <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2/bAnAnA-1.1.2.pkg"
                    sparkle:version="1.1.2"
                    sparkle:shortVersionString="1.1.2"
-                   length="411889601"
+                   length="411912832"
                    type="application/octet-stream"/>
     </item>
 </channel>
