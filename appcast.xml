@@ -10,22 +10,22 @@
         <sparkle:version>1.1.2.2</sparkle:version>
         <sparkle:shortVersionString>1.1.2.2</sparkle:shortVersionString>
         <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-        <pubDate>2026-09-27T15:58:00+08:00</pubDate>
+        <pubDate>2026-09-27T17:42:00+08:00</pubDate>
         <sparkle:releaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:releaseNotesLink>
         <sparkle:fullReleaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:fullReleaseNotesLink>
         <description><![CDATA[
             <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
                 Ver. 1.1.2.2<br>
                 <br>
-                - macOS 安装包 bAnAnA-1.1.2.2.pkg，安装 bAnAnA.app 到 /Library/Input Methods；<br>
-                - 用来核对在线检查更新。检查只比对版本号，不会自动安装。
+                - 升级小香蕉词库的版本为：18.0.11<br>
+                - 将更新模块升级为：Sparkle 2.6.2
             </div>
         ]]></description>
         <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.2/bAnAnA-1.1.2.2.pkg"
                    sparkle:version="1.1.2.2"
                    sparkle:shortVersionString="1.1.2.2"
-                   sparkle:edSignature="o/vsjDT8Es7Z0FoLb5TEwOt1Cmty+b92H4fkXefyiLJF6quu0XZw/bvFLeoetkM309fA2eNxu8fwTg9Luap+Dw=="
-                   length="489444680"
+                   sparkle:edSignature="cgGXgKBkozYr1ZoO3utoZ2bnd0F1m20qeyeW5F2ujOTYNRWaBZhgvq4W2AlIPLU//rBzdm/iZyCmmcSzAnKFBQ=="
+                   length="490223591"
                    type="application/octet-stream"/>
     </item>
     <item>
