@@ -25,7 +25,7 @@
         <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2/bAnAnA-1.1.2.pkg"
                    sparkle:version="1.1.2"
                    sparkle:shortVersionString="1.1.2"
-                   length="411912832"
+                   length="411899012"
                    type="application/octet-stream"/>
     </item>
 </channel>
