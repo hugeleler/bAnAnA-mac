@@ -6,6 +6,30 @@
     <description>bAnAnA for Mac</description>
     <language>zh-Hans</language>
     <item>
+        <title>小香蕉 1.1.2.5</title>
+        <sparkle:version>1.1.2.5</sparkle:version>
+        <sparkle:shortVersionString>1.1.2.5</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+        <pubDate>2026-09-28T23:20:00+08:00</pubDate>
+        <sparkle:releaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:releaseNotesLink>
+        <sparkle:fullReleaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:fullReleaseNotesLink>
+        <description><![CDATA[
+            <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
+                Ver. 1.1.2.5<br>
+                <br>
+                - 安装后读取程序包内词库，其他 Mac 可以显示候选条。<br>
+                - 输入法启动后在后台检查更新，下载完成后安装。
+            </div>
+        ]]></description>
+        <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.5/bAnAnA-1.1.2.5.pkg"
+                   sparkle:version="1.1.2.5"
+                   sparkle:shortVersionString="1.1.2.5"
+                   sparkle:edSignature="Yrq3SV09HzkdIv/HYG6EO93+j/wZtrVmp/6nHbuk2LlFtP7CWU76R/mPVS1WS44kGc6OIcCFvLQZNHRzQXm5Cw=="
+                   sparkle:installationType="package"
+                   length="112131448"
+                   type="application/octet-stream"/>
+    </item>
+    <item>
         <title>小香蕉 1.1.2.2</title>
         <sparkle:version>1.1.2.2</sparkle:version>
         <sparkle:shortVersionString>1.1.2.2</sparkle:shortVersionString>
