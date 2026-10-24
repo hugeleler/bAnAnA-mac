@@ -29,51 +29,5 @@
                    length="77489955"
                    type="application/octet-stream"/>
     </item>
-    <item>
-        <title>小香蕉 1.1.2.2</title>
-        <sparkle:version>1.1.2.2</sparkle:version>
-        <sparkle:shortVersionString>1.1.2.2</sparkle:shortVersionString>
-        <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-        <pubDate>2026-09-27T21:58:00+08:00</pubDate>
-        <sparkle:releaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:releaseNotesLink>
-        <sparkle:fullReleaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:fullReleaseNotesLink>
-        <description><![CDATA[
-            <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
-                Ver. 1.1.2.2<br>
-                <br>
-                - 用 Rust 编写输入法前端代码。<br>
-                - 升级小香蕉词库版本为：18.0.11。<br>
-                - 支持多输入方案。<br>
-                - 升级输入法云端更新模块为：Sparkle 2.6.2。
-            </div>
-        ]]></description>
-        <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.2/bAnAnA-1.1.2.2.pkg"
-                   sparkle:version="1.1.2.2"
-                   sparkle:shortVersionString="1.1.2.2"
-                   sparkle:edSignature="Xd0MRCuuqTF+vhHYHjFT8Q1PvpUxr/xSx1RhdKAPbvnoT9V3eA/MAWLu894fOlrFWbsff7bPhhyinNmd3v6KBw=="
-                   length="112113972"
-                   type="application/octet-stream"/>
-    </item>
-    <item>
-        <title>小香蕉 1.1.2.0</title>
-        <sparkle:version>1.1.2.0</sparkle:version>
-        <sparkle:shortVersionString>1.1.2.0</sparkle:shortVersionString>
-        <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-        <pubDate>2026-09-27T10:24:00+08:00</pubDate>
-        <sparkle:releaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:releaseNotesLink>
-        <sparkle:fullReleaseNotesLink>https://hugeleler.github.io/bAnAnA-mac/changelog.html</sparkle:fullReleaseNotesLink>
-        <description><![CDATA[
-            <div style="font-size: 12px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333333;">
-                Ver. 1.1.2.0<br>
-                <br>
-                - 安装包 bAnAnA-1.1.2.0.pkg。
-            </div>
-        ]]></description>
-        <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.0/bAnAnA-1.1.2.0.pkg"
-                   sparkle:version="1.1.2.0"
-                   sparkle:shortVersionString="1.1.2.0"
-                   length="411899012"
-                   type="application/octet-stream"/>
-    </item>
 </channel>
 </rss>
