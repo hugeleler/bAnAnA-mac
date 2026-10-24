@@ -24,9 +24,9 @@
                         <enclosure url="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.5/bAnAnA-1.1.2.5.pkg"
                    sparkle:version="1.1.2.5"
                    sparkle:shortVersionString="1.1.2.5"
-                   sparkle:edSignature="AywoQNzAiHc1z/cXKIPyQiOHoGFVMmROqnCx0X3lFl2fsnoAbu5I1xnWsCJcbESf4PYlQrWHg/KBn0hJp5ZqDw=="
+                   sparkle:edSignature="QxIS3y98hRikg7RIx8fZLLiXn8AyW/Tat2shNhl3AROZBAzYtxPRUGI35TDBFMaKh0kEuKiJi6X0fWxqBBdxDA=="
                    sparkle:installationType="package"
-                   length="77494467"
+                   length="77813558"
                    type="application/octet-stream"/>
     </item>
 </channel>
