@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>说明书 · 小香蕉</title>
+<title>说明书 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,34 +24,19 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>说明书</h1>
-<h2>方案</h2>
-<p>方案包是挂载单位。缺省 <code>banana</code>，另有 <code>frost</code>。包内多个 schema（全拼、双拼、五笔、英文、九键等）在选单里切换。开关（中英、中英标点、半角全角、简繁）以方案文件为准，部署后生效。</p>
-<h2>桌面打字（macOS / Windows）</h2>
+<p>方案包是挂载单位。缺省 banana，另有 frost。开关以方案为准。</p>
 <ul>
-<li>数字选当前页候选。空格通常上屏高亮项。每页个数由方案 <code>menu/page_size</code> 决定（banana 全拼为 6，给 7–0 留声调）。</li>
-<li>逗号句号是否翻页由方案按键绑定决定，不由皮肤决定。</li>
+<li>数字选当前页候选。空格上屏高亮项。每页个数由方案 <code>menu/page_size</code> 决定（banana 全拼为 6）。</li>
+<li>逗号句号是否翻页由方案绑定，不由皮肤决定。</li>
 <li>退格删编码；编码空了交给系统。</li>
 </ul>
-<h2>手机键盘（Android / iOS）</h2>
-<p>Mac / Windows 只有候选条配色，没有这块虚拟键盘。手机皮肤里是同一套键位：26 功能、26 标准、46 增强、T9、英文九键、注音九键、笔画、英文、数字。布局窗口按方案声明的 <code>keyboard.family</code> 决定哪几块能点。</p>
-<p>26 功能在工具栏下还有一行：左移、行首、选择、剪切、复制、粘贴、行尾、右移。有拼音时左右移动的是候选高亮，不是光标。</p>
-<h3>候选翻页与数量</h3>
-<ul>
-<li>数量默认「随方案」。也可以改成固定 1–10 个。</li>
-<li>翻页「左右按钮」：一屏几个就几个，到边按方案页翻（随方案时 banana 就是 6）。</li>
-<li>翻页「左右滑动」：候选排成一条，手指左右滑。功能行左右色块沿这条一直走到第一个和最后一个，不再被 6 卡住。</li>
-</ul>
-<p>手机还可以调键盘高度 75%–125%、宽度 60%–100%，以及左手 / 右手 / 关闭侧栏。</p>
-<h2>简繁与用户词</h2>
-<p>简繁走方案开关和 OpenCC 表。用户词写在本机用户数据里。固定短语用文本码表，UTF-8，制表符分隔，然后重新部署。</p>
-<h2>部署与日志</h2>
-<p>改 yaml、换方案、启用语言模型之后要部署。失败时看该端的日志。提示「有错误！请查看日志」时先查最近一次改动的缩进和键路径。</p>
+<p>macOS 没有手机那块虚拟键盘，只有候选条。手机键盘见 <a href="https://hugeleler.github.io/bAnAnA-android/doc/UserGuide.html">Android 文档</a>。</p>
+<figure><img class="diagram" src="images/mac-menu.svg" alt="换皮肤、部署、同步、日志、用户设定、在线文档、检查更新"><figcaption>换皮肤、部署、同步、日志、用户设定、在线文档、检查更新</figcaption></figure>
+<p>检查更新不会在后台自动跑。语言模型下载成功不会自动部署；选用后才链接并部署。banana 不要卸光。</p>
 </main>
 </div>
 </body>

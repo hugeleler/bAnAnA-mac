@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>配置 · 小香蕉</title>
+<title>配置 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,16 +24,12 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>配置</h1>
-<p>方案与补丁是 UTF-8 YAML。补丁根节点是 <code>patch</code>，键用斜线表示层级。</p>
-<p>加载：先出厂 <code>rime/</code>，再用用户目录同名文件和 <code>.custom.yaml</code> 覆盖，部署编译进 <code>build/</code>。</p>
-<p>手机偏好（行内预编辑、候选翻页按钮或滑动、候选个数、侧栏、按键反馈）不写在 schema 里，写在该端的设置存储：Android 应用偏好，iOS App Group。</p>
-<p>前端皮肤文件名曾经是 <code>mac.yaml</code> / <code>windows.yaml</code>。现行皮肤是各方案 <code>themes/*.bskin</code>，宿主读对应平台段。引擎内部应用名仍是 <code>banana</code>，菜单显示名是「小香蕉」。</p>
+<p>方案与补丁是 UTF-8 YAML。补丁根节点 <code>patch</code>，键用斜线表示层级。先出厂 <code>rime/</code>，再用用户文件覆盖，部署进编译目录。</p>
+<p>macOS 的界面偏好（若有）不写在 schema 里，写在本端设置存储。</p>
 </main>
 </div>
 </body>

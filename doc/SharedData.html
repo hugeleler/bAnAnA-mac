@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>出厂数据 · 小香蕉</title>
+<title>出厂数据 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,21 +24,13 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>出厂数据</h1>
-<p>随安装包走的是方案根，不是一份平坦的 SharedSupport 词库堆。</p>
-<table class="platforms"><tbody>
-<tr><th>端</th><th>位置</th></tr>
-<tr><td>macOS</td><td>应用包内方案根（<code>Contents/Resources/data/&lt;id&gt;/</code>）</td></tr>
-<tr><td>Windows</td><td>安装目录 <code>data\&lt;id&gt;\</code></td></tr>
-<tr><td>Android</td><td>APK assets：<code>packages/rime.tar.xz</code> 与各包 <code>themes/</code>、<code>package.yaml</code>，首次解开到私有 <code>files/packages/</code></td></tr>
-<tr><td>iOS</td><td>包内方案拷进 App Group <code>packages/&lt;id&gt;/</code></td></tr>
-</tbody></table>
+<p>应用包内 <code>Contents/Resources/data/&lt;id&gt;/</code></p>
 <p>用户修改不要写进出厂目录。升级安装包会换掉这些文件。补丁和自装方案放用户侧。</p>
+<figure><img class="diagram" src="images/package.svg" alt="出厂同样是按方案根分发，不是平坦词库堆"><figcaption>出厂同样是按方案根分发，不是平坦词库堆</figcaption></figure>
 </main>
 </div>
 </body>

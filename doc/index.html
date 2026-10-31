@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>小香蕉 · 小香蕉</title>
+<title>小香蕉 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,36 +24,19 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
-<h1>小香蕉</h1>
-<p>小香蕉是四端中文输入法。显示名「小香蕉」，仓库与安装包名 bAnAnA。现行版本 <strong>1.1.2.5</strong>。</p>
-<p>组字由 librime 1.17.0 完成。方案、词库、皮肤按方案包分发。安装包不带语言模型文件（<code>.gram</code>）；语言模型在 Mac / Windows / Android 里按需下载。</p>
-<h2>从这里开始</h2>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
+<div class="hero"><img src="images/app.png" alt="小香蕉"><div>
+<h1 style="margin:0">小香蕉 for macOS</h1>
+<p>版本 1.1.2.5 · 安装包 <code>bAnAnA-1.1.2.5.pkg</code></p>
+</div></div>
+<p>输入法装在 <code>/Library/Input Methods/bAnAnA.app</code>。用户数据 <code>~/Library/bAnAnA</code>。组字走 librime 1.17.0。安装包零 <code>.gram</code>。</p>
+<figure><img class="diagram" src="images/mac-arch.svg" alt="示意图：系统里的 app 给出厂数据，用户目录放补丁和词"><figcaption>示意图：系统里的 app 给出厂数据，用户目录放补丁和词</figcaption></figure>
 <ul>
 <li><a href="Downloads.html">下载与安装</a>、<a href="GettingStarted.html">入门</a></li>
-<li><a href="UserGuide.html">说明书</a>：桌面按键、手机键盘、候选翻页</li>
-<li><a href="RimeWithSchemata.html">方案包</a>：缺省「小香蕉」与「白霜拼音」</li>
-<li><a href="DictionaryPack.html">语言模型</a></li>
-</ul>
-<h2>各端</h2>
-<table class="platforms"><tbody>
-<tr><th>端</th><th>状态</th><th>安装</th></tr>
-<tr><td>macOS</td><td>已发布</td><td><code>bAnAnA-1.1.2.5.pkg</code>，装到 <code>/Library/Input Methods/bAnAnA.app</code></td></tr>
-<tr><td>Windows</td><td>已发布</td><td><code>bAnAnA-1.1.2.5-setup.exe</code>，文本服务 + 独立引擎进程</td></tr>
-<tr><td>Android</td><td>已发布</td><td><code>bAnAnA-1.1.2.5.apk</code>，现役仅 arm64-v8a</td></tr>
-<tr><td>iOS</td><td>已完成，无公开 IPA</td><td>容器 App + 键盘扩展。测试走 Xcode / 付费账号 TestFlight，不要把 IPA 当 APK 分发</td></tr>
-</tbody></table>
-<p>没有 Linux 端。</p>
-<h2>发布通道</h2>
-<ul>
-<li><a href="https://github.com/hugeleler/bAnAnA-mac/releases/tag/v1.1.2.5">macOS</a> · <a href="https://hugeleler.github.io/bAnAnA-mac/appcast.xml">appcast</a></li>
-<li><a href="https://github.com/hugeleler/bAnAnA-windows/releases/tag/v1.1.2.5">Windows</a> · <a href="https://hugeleler.github.io/bAnAnA-windows/appcast.xml">appcast</a></li>
-<li><a href="https://github.com/hugeleler/bAnAnA-android/releases/tag/v1.1.2.5">Android</a> · <a href="https://hugeleler.github.io/bAnAnA-android/appcast.xml">appcast</a></li>
-<li><a href="https://github.com/hugeleler/bAnAnA-ios/releases/tag/v1.1.2.5">iOS</a> · <a href="https://hugeleler.github.io/bAnAnA-ios/appcast.xml">appcast</a>（通道已建，Release 不放 IPA）</li>
+<li><a href="UserGuide.html">说明书</a></li>
+<li><a href="RimeWithSchemata.html">方案包</a>、<a href="DictionaryPack.html">语言模型</a></li>
 </ul>
 </main>
 </div>

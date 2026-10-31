@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>方案包 · 小香蕉</title>
+<title>方案包 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,26 +24,23 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>方案包</h1>
-<p>一套方案是一个根目录，不是一个 yaml。挂载、升级、删除都以这个根为单位：</p>
+<p>一套方案是一个根目录。挂载、升级、删除都以这个根为单位。macOS 与另外三端读同一套结构。</p>
+<figure><img class="diagram" src="images/package.svg" alt="方案根：package.yaml + rime/ + themes/"><figcaption>方案根：package.yaml + rime/ + themes/</figcaption></figure>
 <pre><code>data/&lt;id&gt;/
-  package.yaml   包 id、显示名、版本
-  rime/          交给 librime 的词库、schema、lua、opencc
-  themes/        .bskin，宿主只读自己那一段
+  package.yaml
+  rime/          交给 librime；只有这一层进 mount
+  themes/*.bskin 宿主只读本端那一段
 </code></pre>
-<p>运行时只把 <code>rime/</code> 挂进 mount。<code>package.yaml</code> 和 <code>themes/</code> 不进共享编译目录。</p>
 <table><tbody>
 <tr><th>id</th><th>显示名</th><th>说明</th></tr>
-<tr><td><code>banana</code></td><td>小香蕉</td><td>缺省包。含全拼、双拼、五笔、英文、九键等。不要卸到一个不剩</td></tr>
+<tr><td><code>banana</code></td><td>小香蕉</td><td>缺省包。全拼、双拼、五笔、英文、九键。不要卸光</td></tr>
 <tr><td><code>frost</code></td><td>白霜拼音</td><td>第二包，结构相同</td></tr>
 </tbody></table>
-<p>主方案文件仍是各包 <code>rime/</code> 里的 schema。改打字用用户目录里的 <code>&lt;schema id&gt;.custom.yaml</code> 补丁，不要改安装包里的原件。</p>
-<p>新包整目录丢进该端的方案根（桌面 <code>data/&lt;id&gt;/</code>，手机运行时 <code>packages/&lt;id&gt;/</code>），再部署。源里的 <code>default.yaml</code> 不链进 mount，由宿主按已挂载列表另写。</p>
+<p>用户目录：<code>~/Library/bAnAnA</code>。出厂：应用包内 <code>Contents/Resources/data/&lt;id&gt;/</code></p>
 </main>
 </div>
 </body>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250">
+<rect x="24" y="28" width="300" height="190" rx="12" fill="#cfe2f3" stroke="#3d85c6"/>
+<text x="44" y="64" font-size="16" fill="#333">bAnAnA.app</text>
+<text x="44" y="96" font-size="13" fill="#555">/Library/Input Methods/</text>
+<text x="44" y="118" font-size="13" fill="#555">输入法前端 + librime</text>
+<text x="44" y="140" font-size="13" fill="#555">出厂 data/&lt;id&gt;/</text>
+<rect x="396" y="28" width="300" height="190" rx="12" fill="#f4e3c1" stroke="#b08948"/>
+<text x="416" y="64" font-size="16" fill="#333">~/Library/bAnAnA</text>
+<text x="416" y="96" font-size="13" fill="#555">补丁、用户词、build/</text>
+<text x="416" y="118" font-size="13" fill="#555">挂载、皮肤、gram 选用</text>
+<text x="416" y="140" font-size="13" fill="#555">不读 ~/Library/Rime</text>
+<line x1="324" y1="123" x2="396" y2="123" stroke="#888" stroke-width="2"/>
+</svg>

@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>皮肤与定制 · 小香蕉</title>
+<title>皮肤与定制 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,24 +24,16 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>皮肤与定制</h1>
-<h2>皮肤</h2>
-<p>一份 <code>.bskin</code> 里按平台分段。换皮肤只换颜色和手机键面，不改当前方案，也不改哪几块键盘能点。</p>
-<p>出厂：macOS wechat，Windows luna，Android rainbow，iOS banana。列表从已挂载方案的 <code>themes/</code> 来，不要写死皮肤名。</p>
-<p>桌面仍可用补丁改候选条；手机在应用里选皮肤。不要把 Android 键盘 yaml 抄进 Mac 补丁。</p>
-<h2>打字补丁</h2>
-<p>主 schema 的补丁是 <code>banana.custom.yaml</code>（用户目录）。例如桌面每页候选：</p>
+<p>一份 <code>.bskin</code> 按平台分段。换皮肤只换颜色和（手机）键面，不改当前方案。</p>
+<p>打字补丁放用户目录 <code>&lt;schema id&gt;.custom.yaml</code>。例如桌面每页候选：</p>
 <pre><code>patch:
   "menu/page_size": 6
 </code></pre>
-<p>手机「随方案」读的就是这个 page_size。改完要部署。</p>
-<h2>按应用切中英文</h2>
-<p>macOS 可按 bundle id 写初始状态，写在用户补丁里，不要改安装包。</p>
+<p>改完要重新部署。手机「随方案」读的就是这个值。</p>
 </main>
 </div>
 </body>

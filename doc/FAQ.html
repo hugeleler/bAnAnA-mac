@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>常见问题 · 小香蕉</title>
+<title>常见问题 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,28 +24,20 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>常见问题</h1>
-<h2>手机候选只能走到第 6 个？</h2>
-<p>把「候选翻页」设成「左右滑动」，数量用「随方案」。这时功能行左右应走到条头和条尾。设成「左右按钮」才是按方案页（banana 一页 6 个）翻。</p>
-<h2>iOS 键盘没有方案 / 改了设置不生效？</h2>
-<p>打开「允许完全访问」。键盘和主应用靠 App Group 交换 <code>packages/</code> 与偏好。工具栏打开主应用也要完全访问。</p>
-<h2>为什么没有 IPA？</h2>
-<p>iOS 不把 IPA 当 APK 公开分发。外人测需要付费 Apple Developer + TestFlight。Personal Team 只能签到本机。</p>
+<h2>和鼠须管抢配置？</h2>
+<p>小香蕉只用 <code>~/Library/bAnAnA</code>，不读 <code>~/Library/Rime</code>。不要共用 <code>installation.yaml</code> 和同步目录。</p>
+<h2>检查更新说已是最新，但我刚换了包？</h2>
+<p>频道只比较版本字符串 1.1.2.5。同版本覆盖要手动装 pkg。</p>
 <h2>安装包里没有语言模型？</h2>
-<p>故意的。四端安装包零 <code>.gram</code>。在 Mac / Windows / Android 的语言模型列表里下载。iOS 列表界面还没接上。</p>
-<h2>和鼠须管、小狼毫抢配置？</h2>
-<p>小香蕉不用 <code>~/Library/Rime</code> 或 <code>%AppData%\Rime</code>。不要把整个 Rime 目录改名过来。词要迁移就导出文本码表或按各端同步，不要共用 <code>installation.yaml</code>。</p>
-<h2>检查更新说已是最新，但我刚换了同一版本的包？</h2>
-<p>频道比较的是版本字符串 1.1.2.5。同版本覆盖发布不会弹出更新。直接装 Release 链接。</p>
-<h2>Android 只能装 arm64？</h2>
-<p>现役 JNI 只有 arm64-v8a。32 位和 x86 模拟器不是现行包。</p>
-<h2>Linux 呢？</h2>
-<p>不做。</p>
+<p>故意的。菜单「语言模型」里下载再选用。</p>
+<h2>换了皮肤没变化？</h2>
+<p>看菜单是否提示部署完成。亮色和暗色要一起改。</p>
+<h2>手机候选翻页？</h2>
+<p>那是 Android / iOS 的设置。Mac 每页个数跟方案。</p>
 </main>
 </div>
 </body>

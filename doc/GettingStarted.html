@@ -3,23 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>入门 · 小香蕉</title>
+<title>入门 · 小香蕉 macOS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="layout">
-<nav><h2>小香蕉</h2>
+<nav><h2>小香蕉 macOS</h2>
 <div><a href="index.html">首页</a></div>
 <div><a href="Introduction.html">简介</a></div>
 <div><a href="GettingStarted.html">入门</a></div>
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>四端</h2>
-<div><a href="bAnAnAMac.html">macOS</a></div>
-<div><a href="RimeWithWeasel.html">Windows</a></div>
-<div><a href="Android.html">Android</a></div>
-<div><a href="iOS.html">iOS</a></div>
 <h2>方案与数据</h2>
 <div><a href="RimeWithSchemata.html">方案包</a></div>
 <div><a href="UserData.html">用户数据</a></div>
@@ -29,38 +24,18 @@
 <div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
 <div><a href="Downloads.html">安装包</a></div>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
-<div><a href="Android.html">Android 发布</a></div>
-<div><a href="iOS.html">iOS 发布</a></div></nav>
+<div><a href="Update.html">更新频道</a></div></nav>
 <main>
+<div class="sisters"><a href="index.html" class="here">macOS 文档</a><a href="https://hugeleler.github.io/bAnAnA-windows/doc/">Windows 文档</a><a href="https://hugeleler.github.io/bAnAnA-android/doc/">Android 文档</a><a href="https://hugeleler.github.io/bAnAnA-ios/doc/">iOS 文档</a></div>
 <h1>入门</h1>
-<p>先按系统装好对应安装包，见 <a href="Downloads.html">下载与安装</a>。版本都是 1.1.2.5。</p>
-<h2>macOS</h2>
+<figure><img class="diagram" src="images/mac-flow.svg" alt="安装四步"><figcaption>安装四步</figcaption></figure>
 <ol>
-<li>打开 <code>bAnAnA-1.1.2.5.pkg</code>。</li>
-<li>输入法在 <code>/Library/Input Methods/bAnAnA.app</code>。</li>
-<li>菜单栏输入法菜单选「小香蕉」。简体源 <code>im.banana.inputmethod.bAnAnA.Hans</code>，繁体 <code>im.banana.inputmethod.bAnAnA.Hant</code>。</li>
-<li>拼音后空格或数字上屏。换皮肤、重新部署、检查更新都在输入法菜单。</li>
+<li>打开 <a href="https://github.com/hugeleler/bAnAnA-mac/releases/download/v1.1.2.5/bAnAnA-1.1.2.5.pkg">bAnAnA-1.1.2.5.pkg</a>。</li>
+<li>装完后应用在 <code>/Library/Input Methods/bAnAnA.app</code>。</li>
+<li>菜单栏输入法菜单选「小香蕉」。</li>
+<li>拼音后空格或数字上屏。换皮肤、部署、检查更新都在输入法菜单。</li>
 </ol>
-<h2>Windows</h2>
-<ol>
-<li>运行 <code>bAnAnA-1.1.2.5-setup.exe</code>。</li>
-<li>在系统输入法列表里启用小香蕉。</li>
-<li>用户数据在 <code>%AppData%\bAnAnA</code>。不要写到 Weasel / <code>%AppData%\Rime</code>。</li>
-</ol>
-<h2>Android</h2>
-<ol>
-<li>安装 <code>bAnAnA-1.1.2.5.apk</code>（arm64）。</li>
-<li>系统设置里启用小香蕉，并允许在该输入法中显示。</li>
-<li>打开应用改方案、皮肤、候选翻页、候选个数、语言模型。</li>
-</ol>
-<h2>iOS</h2>
-<ol>
-<li>没有公开 IPA。用 Xcode 把主应用装到真机，或以后用付费账号走 TestFlight。</li>
-<li>系统设置 → 键盘 → 添加「小香蕉」，打开「允许完全访问」。完全访问关着时，键盘读不到 App Group 里的方案和偏好。</li>
-<li>主应用 bundle <code>im.banana.inputmethod.bAnAnA</code>，键盘 <code>im.banana.inputmethod.bAnAnA.keyboard</code>。工具栏第一项用 <code>banana://</code> 打开主应用，同样需要完全访问。</li>
-</ol>
+<figure><img class="diagram" src="images/mac-menu.svg" alt="示意图：输入法菜单项"><figcaption>示意图：输入法菜单项</figcaption></figure>
 </main>
 </div>
 </body>

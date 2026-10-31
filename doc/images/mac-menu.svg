@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280">
+<rect x="180" y="16" width="360" height="248" rx="12" fill="#fff8e1" stroke="#b08948"/>
+<text x="210" y="48" font-size="16" fill="#3d2914">输入法菜单 · 小香蕉</text>
+<g font-size="14" fill="#3d2914">
+<text x="210" y="84">更换皮肤</text>
+<text x="210" y="112">重新部署</text>
+<text x="210" y="140">同步用户数据</text>
+<text x="210" y="168">日志…</text>
+<text x="210" y="196">用户设定…</text>
+<text x="210" y="224">在线文档…</text>
+<text x="210" y="252">检查新版本…</text>
+</g>
+</svg>
