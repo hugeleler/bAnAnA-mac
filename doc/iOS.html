@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iOS · 小香蕉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<nav><h2>小香蕉</h2>
+<div><a href="index.html">首页</a></div>
+<div><a href="Introduction.html">简介</a></div>
+<div><a href="GettingStarted.html">入门</a></div>
+<div><a href="Downloads.html">下载与安装</a></div>
+<div><a href="UserGuide.html">说明书</a></div>
+<div><a href="FAQ.html">常见问题</a></div>
+<h2>四端</h2>
+<div><a href="bAnAnAMac.html">macOS</a></div>
+<div><a href="RimeWithWeasel.html">Windows</a></div>
+<div><a href="Android.html">Android</a></div>
+<div><a href="iOS.html">iOS</a></div>
+<h2>方案与数据</h2>
+<div><a href="RimeWithSchemata.html">方案包</a></div>
+<div><a href="UserData.html">用户数据</a></div>
+<div><a href="SharedData.html">出厂数据</a></div>
+<div><a href="Configuration.html">配置</a></div>
+<div><a href="CustomizationGuide.html">皮肤与定制</a></div>
+<div><a href="DictionaryPack.html">语言模型</a></div>
+<h2>发布</h2>
+<div><a href="Downloads.html">安装包</a></div>
+<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
+<div><a href="Android.html">Android 发布</a></div>
+<div><a href="iOS.html">iOS 发布</a></div></nav>
+<main>
+<h1>iOS</h1>
+<p>逻辑对齐 Android：容器 App + 键盘扩展，librime 只在键盘进程。最低 iOS 16。iPhone 与 iPad。</p>
+<ul>
+<li>主应用 <code>im.banana.inputmethod.bAnAnA</code></li>
+<li>键盘 <code>im.banana.inputmethod.bAnAnA.keyboard</code></li>
+<li>App Group <code>group.im.banana.inputmethod.bAnAnA</code></li>
+</ul>
+<p>方案拷在 Group 的 <code>packages/&lt;id&gt;/</code>，用户数据在 <code>user/</code>，相对关系与 Android 相同。皮肤与 Android 同一套 bskin，出厂 banana。</p>
+<p>主应用菜单分组与 Android 主界面对应。候选翻页、随方案个数、功能行左右在滑动模式下走到候选条头尾，与 Android 同一套引擎。</p>
+<p><strong>没有公开 IPA。</strong> 发布库 <a href="https://github.com/hugeleler/bAnAnA-ios">bAnAnA-ios</a> 只放通道说明和 appcast。装机：Xcode 打开 <code>ios/bAnAnA.xcodeproj</code> 签到真机，或付费账号 TestFlight。不要把 IPA 当 APK 分发。</p>
+<p>必须在系统设置添加键盘并打开完全访问。iCloud 备份在 Personal Team 下不可用。语言模型列表、Wi-Fi 传文件在 iOS 上仍是占位，尚未接上。</p>
+</main>
+</div>
+</body>
+</html>

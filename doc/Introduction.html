@@ -15,38 +15,31 @@
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>目录与配置</h2>
-<div><a href="UserData.html">用户文件夹</a></div>
-<div><a href="SharedData.html">共享文件夹</a></div>
-<div><a href="Configuration.html">配置文件</a></div>
-<div><a href="CustomizationGuide.html">定制</a></div>
-<div><a href="RimeWithSchemata.html">输入方案</a></div>
-<div><a href="SpellingAlgebra.html">拼写运算</a></div>
-<div><a href="DictionaryPack.html">词典扩展包</a></div>
-<div><a href="Recipes.html">配方</a></div>
-<div><a href="ComboPinyin.html">并击</a></div>
-<h2>前端</h2>
-<div><a href="bAnAnAMac.html">macOS 前端</a></div>
-<div><a href="RimeWithWeasel.html">Windows 端</a></div>
-<div><a href="RimeWithTheDesign.html">设计</a></div>
-<div><a href="RimeWithTheCode.html">代码</a></div>
-<div><a href="RimeWithIBus.html">IBus</a></div>
-<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>四端</h2>
+<div><a href="bAnAnAMac.html">macOS</a></div>
+<div><a href="RimeWithWeasel.html">Windows</a></div>
+<div><a href="Android.html">Android</a></div>
+<div><a href="iOS.html">iOS</a></div>
+<h2>方案与数据</h2>
+<div><a href="RimeWithSchemata.html">方案包</a></div>
+<div><a href="UserData.html">用户数据</a></div>
+<div><a href="SharedData.html">出厂数据</a></div>
+<div><a href="Configuration.html">配置</a></div>
+<div><a href="CustomizationGuide.html">皮肤与定制</a></div>
+<div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 发布说明</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
-<div><a href="UserQuotes.html">反馈</a></div>
-<div><a href="MoodCollection.html">记事</a></div></nav>
+<div><a href="Downloads.html">安装包</a></div>
+<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
+<div><a href="Android.html">Android 发布</a></div>
+<div><a href="iOS.html">iOS 发布</a></div></nav>
 <main>
 <h1>简介</h1>
-<p>小香蕉在菜单和系统输入法列表里的显示名是「小香蕉」。安装包和仓库名是 bAnAnA。</p>
-<p>它做三件事：</p>
-<p>1. 向系统注册输入法，接收按键。</p>
-<p>2. 把按键交给输入法引擎，取回候选和上屏文字。</p>
-<p>3. 画出候选条，并提供部署、皮肤、同步和检查更新。</p>
-<p>打字规则写在方案里，不写死在菜单里。当前主方案 id 是 <code>banana</code>，定义在随应用分发的 <code>banana.schema.yaml</code>。macOS 上候选条的外观写在 <code>mac.yaml</code>。</p>
-<p>用户改过的文件放在 <code>~/Library/bAnAnA</code>。这个目录只属于小香蕉。鼠须管继续使用 <code>~/Library/Rime</code>，两边的词库、皮肤和安装标识互不覆盖。</p>
-<p>前端按 GPL-3.0 分发。输入法引擎 librime 使用它自己的 BSD 许可证。收费分发副本不取消这两份许可证：收到程序的人可以再分发，对应源码必须能拿到。</p>
+<p>系统输入法列表里的名字是「小香蕉」。安装包和发布库名是 bAnAnA。版本 <strong>1.1.2.5</strong>。</p>
+<p>它做三件事：向系统注册输入法、把按键交给引擎取候选、画出候选和键盘。</p>
+<p>打字规则写在方案包里，不写死在菜单。缺省方案包 id 是 <code>banana</code>（显示名「小香蕉」），第二包是 <code>frost</code>（「白霜拼音」）。一包里含全拼、双拼、五笔、英文、九键等 schema，不是「一种输入法一种方案」。</p>
+<p>皮肤是 <code>.bskin</code>。桌面读各自的配色段；Android / iOS 读同一套 <code>android</code> 键盘段（键位 + 调色）。出厂皮肤：macOS wechat，Windows luna，Android rainbow，iOS banana。</p>
+<p>四端共用同一套方案数据。用户词、挂载、皮肤选择在本机用户目录，不和鼠须管 / 小狼毫的 <code>Rime</code> 目录混用。</p>
 </main>
 </div>
 </body>

@@ -15,52 +15,52 @@
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>目录与配置</h2>
-<div><a href="UserData.html">用户文件夹</a></div>
-<div><a href="SharedData.html">共享文件夹</a></div>
-<div><a href="Configuration.html">配置文件</a></div>
-<div><a href="CustomizationGuide.html">定制</a></div>
-<div><a href="RimeWithSchemata.html">输入方案</a></div>
-<div><a href="SpellingAlgebra.html">拼写运算</a></div>
-<div><a href="DictionaryPack.html">词典扩展包</a></div>
-<div><a href="Recipes.html">配方</a></div>
-<div><a href="ComboPinyin.html">并击</a></div>
-<h2>前端</h2>
-<div><a href="bAnAnAMac.html">macOS 前端</a></div>
-<div><a href="RimeWithWeasel.html">Windows 端</a></div>
-<div><a href="RimeWithTheDesign.html">设计</a></div>
-<div><a href="RimeWithTheCode.html">代码</a></div>
-<div><a href="RimeWithIBus.html">IBus</a></div>
-<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>四端</h2>
+<div><a href="bAnAnAMac.html">macOS</a></div>
+<div><a href="RimeWithWeasel.html">Windows</a></div>
+<div><a href="Android.html">Android</a></div>
+<div><a href="iOS.html">iOS</a></div>
+<h2>方案与数据</h2>
+<div><a href="RimeWithSchemata.html">方案包</a></div>
+<div><a href="UserData.html">用户数据</a></div>
+<div><a href="SharedData.html">出厂数据</a></div>
+<div><a href="Configuration.html">配置</a></div>
+<div><a href="CustomizationGuide.html">皮肤与定制</a></div>
+<div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 发布说明</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
-<div><a href="UserQuotes.html">反馈</a></div>
-<div><a href="MoodCollection.html">记事</a></div></nav>
+<div><a href="Downloads.html">安装包</a></div>
+<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
+<div><a href="Android.html">Android 发布</a></div>
+<div><a href="iOS.html">iOS 发布</a></div></nav>
 <main>
 <h1>入门</h1>
-<h2>安装</h2>
-<p>下载 <a href="https://github.com/hugeleler/bAnAnA-mac/releases/tag/v1.1.2.2">小香蕉 1.1.2.2</a> 的 <code>bAnAnA-1.1.2.2.pkg</code>，打开安装器。安装结束后，输入法位于：</p>
-<p><code>/Library/Input Methods/bAnAnA.app</code></p>
-<p>在菜单栏输入法菜单里选择「小香蕉」。简体输入源 id 是 <code>im.banana.inputmethod.bAnAnA.Hans</code>，繁体是 <code>im.banana.inputmethod.bAnAnA.Hant</code>。</p>
-<p>当前安装包尚未使用 Developer ID 签名，也未公证。macOS 的 Gatekeeper 会拦住未签名安装包的直接打开。系统设置里的键盘列表也可能不列出未通过 Gatekeeper 的输入法。签名和公证的说明见 <a href="bAnAnAMacReleaseManual.html">macOS 发布说明</a>。</p>
-<h2>第一次输入</h2>
-<p>1. 切到小香蕉。</p>
-<p>2. 输入拼音，空格或数字上屏。</p>
-<p>3. 需要改外观时，点输入法菜单里的「更换皮肤」。</p>
-<p>4. 改完用户目录里的 yaml 后，点「重新部署」。</p>
-<h2>菜单</h2>
-<table><tbody>
-<tr><th>菜单</th><th>作用</th></tr>
-<tr><td>更换皮肤</td><td>弹出皮肤列表，写入 <code>mac.custom.yaml</code> 的亮色和暗色方案</td></tr>
-<tr><td>重新部署</td><td>重新编译方案和词库</td></tr>
-<tr><td>同步用户数据</td><td>按用户目录里的同步设定合并词典快照</td></tr>
-<tr><td>日志...</td><td>打开本次运行的日志目录</td></tr>
-<tr><td>用户设定...</td><td>打开 <code>~/Library/bAnAnA</code></td></tr>
-<tr><td>在线文档...</td><td>打开本维基</td></tr>
-<tr><td>检查新版本...</td><td>读取更新频道，和当前版本比较</td></tr>
-</tbody></table>
-<p>检查新版本不会在后台自动跑。只有点这个菜单才会请求更新频道。</p>
+<p>先按系统装好对应安装包，见 <a href="Downloads.html">下载与安装</a>。版本都是 1.1.2.5。</p>
+<h2>macOS</h2>
+<ol>
+<li>打开 <code>bAnAnA-1.1.2.5.pkg</code>。</li>
+<li>输入法在 <code>/Library/Input Methods/bAnAnA.app</code>。</li>
+<li>菜单栏输入法菜单选「小香蕉」。简体源 <code>im.banana.inputmethod.bAnAnA.Hans</code>，繁体 <code>im.banana.inputmethod.bAnAnA.Hant</code>。</li>
+<li>拼音后空格或数字上屏。换皮肤、重新部署、检查更新都在输入法菜单。</li>
+</ol>
+<h2>Windows</h2>
+<ol>
+<li>运行 <code>bAnAnA-1.1.2.5-setup.exe</code>。</li>
+<li>在系统输入法列表里启用小香蕉。</li>
+<li>用户数据在 <code>%AppData%\bAnAnA</code>。不要写到 Weasel / <code>%AppData%\Rime</code>。</li>
+</ol>
+<h2>Android</h2>
+<ol>
+<li>安装 <code>bAnAnA-1.1.2.5.apk</code>（arm64）。</li>
+<li>系统设置里启用小香蕉，并允许在该输入法中显示。</li>
+<li>打开应用改方案、皮肤、候选翻页、候选个数、语言模型。</li>
+</ol>
+<h2>iOS</h2>
+<ol>
+<li>没有公开 IPA。用 Xcode 把主应用装到真机，或以后用付费账号走 TestFlight。</li>
+<li>系统设置 → 键盘 → 添加「小香蕉」，打开「允许完全访问」。完全访问关着时，键盘读不到 App Group 里的方案和偏好。</li>
+<li>主应用 bundle <code>im.banana.inputmethod.bAnAnA</code>，键盘 <code>im.banana.inputmethod.bAnAnA.keyboard</code>。工具栏第一项用 <code>banana://</code> 打开主应用，同样需要完全访问。</li>
+</ol>
 </main>
 </div>
 </body>

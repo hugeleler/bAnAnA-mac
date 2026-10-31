@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>定制 · 小香蕉</title>
+<title>皮肤与定制 · 小香蕉</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,52 +15,38 @@
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>目录与配置</h2>
-<div><a href="UserData.html">用户文件夹</a></div>
-<div><a href="SharedData.html">共享文件夹</a></div>
-<div><a href="Configuration.html">配置文件</a></div>
-<div><a href="CustomizationGuide.html">定制</a></div>
-<div><a href="RimeWithSchemata.html">输入方案</a></div>
-<div><a href="SpellingAlgebra.html">拼写运算</a></div>
-<div><a href="DictionaryPack.html">词典扩展包</a></div>
-<div><a href="Recipes.html">配方</a></div>
-<div><a href="ComboPinyin.html">并击</a></div>
-<h2>前端</h2>
-<div><a href="bAnAnAMac.html">macOS 前端</a></div>
-<div><a href="RimeWithWeasel.html">Windows 端</a></div>
-<div><a href="RimeWithTheDesign.html">设计</a></div>
-<div><a href="RimeWithTheCode.html">代码</a></div>
-<div><a href="RimeWithIBus.html">IBus</a></div>
-<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>四端</h2>
+<div><a href="bAnAnAMac.html">macOS</a></div>
+<div><a href="RimeWithWeasel.html">Windows</a></div>
+<div><a href="Android.html">Android</a></div>
+<div><a href="iOS.html">iOS</a></div>
+<h2>方案与数据</h2>
+<div><a href="RimeWithSchemata.html">方案包</a></div>
+<div><a href="UserData.html">用户数据</a></div>
+<div><a href="SharedData.html">出厂数据</a></div>
+<div><a href="Configuration.html">配置</a></div>
+<div><a href="CustomizationGuide.html">皮肤与定制</a></div>
+<div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 发布说明</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
-<div><a href="UserQuotes.html">反馈</a></div>
-<div><a href="MoodCollection.html">记事</a></div></nav>
+<div><a href="Downloads.html">安装包</a></div>
+<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
+<div><a href="Android.html">Android 发布</a></div>
+<div><a href="iOS.html">iOS 发布</a></div></nav>
 <main>
-<h1>定制</h1>
-<p>小香蕉把「改外观」和「改打字」分成两个文件。</p>
+<h1>皮肤与定制</h1>
 <h2>皮肤</h2>
-<p>macOS 只读 <code>mac.yaml</code>。不要把皮肤写进 <code>windows.yaml</code>，Windows 端也不会读 <code>mac.yaml</code>。</p>
-<p>默认皮肤在应用自带的 <code>mac.yaml</code>：<code>style/color_scheme</code> 与 <code>style/color_scheme_dark</code>。菜单「更换皮肤」会在用户目录生成或改写 <code>mac.custom.yaml</code>，同时写下亮色和暗色两个键，然后重新部署。</p>
-<p>手改时只改用户目录里的补丁，不要改应用包里的原文件。包内文件会在下次安装时被盖掉。</p>
-<p><code>mac.custom.yaml</code> 的形状：</p>
-<pre><code>
-patch:
-  &quot;style/color_scheme&quot;: wechat
-  &quot;style/color_scheme_dark&quot;: wechat
+<p>一份 <code>.bskin</code> 里按平台分段。换皮肤只换颜色和手机键面，不改当前方案，也不改哪几块键盘能点。</p>
+<p>出厂：macOS wechat，Windows luna，Android rainbow，iOS banana。列表从已挂载方案的 <code>themes/</code> 来，不要写死皮肤名。</p>
+<p>桌面仍可用补丁改候选条；手机在应用里选皮肤。不要把 Android 键盘 yaml 抄进 Mac 补丁。</p>
+<h2>打字补丁</h2>
+<p>主 schema 的补丁是 <code>banana.custom.yaml</code>（用户目录）。例如桌面每页候选：</p>
+<pre><code>patch:
+  "menu/page_size": 6
 </code></pre>
-<p>保存后点「重新部署」。<code>config_version</code> 必须大于共享目录里同名文件的版本，补丁才会压过默认文件。应用自带的 <code>mac.yaml</code> 已经带了这个字段。</p>
-<h2>打字</h2>
-<p>方案补丁用 <code>&lt;方案 id&gt;.custom.yaml</code>。主方案是 <code>banana</code>，补丁文件就是 <code>~/Library/bAnAnA/banana.custom.yaml</code>。</p>
-<p>只写要改的键。例如把每页候选数改成 6：</p>
-<pre><code>
-patch:
-  &quot;menu/page_size&quot;: 6
-</code></pre>
-<p>改完重新部署。部署读的是用户目录盖过共享目录之后的结果。</p>
-<h2>按应用切换中英文</h2>
-<p><code>mac.yaml</code> 的 <code>app_options</code> 可以按 bundle id 指定初始状态，例如让某个应用打开时进入英文。写在 <code>mac.custom.yaml</code> 的 <code>patch</code> 里，不要改安装包。</p>
+<p>手机「随方案」读的就是这个 page_size。改完要部署。</p>
+<h2>按应用切中英文</h2>
+<p>macOS 可按 bundle id 写初始状态，写在用户补丁里，不要改安装包。</p>
 </main>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>输入方案 · 小香蕉</title>
+<title>方案包 · 小香蕉</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,44 +15,40 @@
 <div><a href="Downloads.html">下载与安装</a></div>
 <div><a href="UserGuide.html">说明书</a></div>
 <div><a href="FAQ.html">常见问题</a></div>
-<h2>目录与配置</h2>
-<div><a href="UserData.html">用户文件夹</a></div>
-<div><a href="SharedData.html">共享文件夹</a></div>
-<div><a href="Configuration.html">配置文件</a></div>
-<div><a href="CustomizationGuide.html">定制</a></div>
-<div><a href="RimeWithSchemata.html">输入方案</a></div>
-<div><a href="SpellingAlgebra.html">拼写运算</a></div>
-<div><a href="DictionaryPack.html">词典扩展包</a></div>
-<div><a href="Recipes.html">配方</a></div>
-<div><a href="ComboPinyin.html">并击</a></div>
-<h2>前端</h2>
-<div><a href="bAnAnAMac.html">macOS 前端</a></div>
-<div><a href="RimeWithWeasel.html">Windows 端</a></div>
-<div><a href="RimeWithTheDesign.html">设计</a></div>
-<div><a href="RimeWithTheCode.html">代码</a></div>
-<div><a href="RimeWithIBus.html">IBus</a></div>
-<div><a href="Rime-in-Emacs.html">Emacs</a></div>
+<h2>四端</h2>
+<div><a href="bAnAnAMac.html">macOS</a></div>
+<div><a href="RimeWithWeasel.html">Windows</a></div>
+<div><a href="Android.html">Android</a></div>
+<div><a href="iOS.html">iOS</a></div>
+<h2>方案与数据</h2>
+<div><a href="RimeWithSchemata.html">方案包</a></div>
+<div><a href="UserData.html">用户数据</a></div>
+<div><a href="SharedData.html">出厂数据</a></div>
+<div><a href="Configuration.html">配置</a></div>
+<div><a href="CustomizationGuide.html">皮肤与定制</a></div>
+<div><a href="DictionaryPack.html">语言模型</a></div>
 <h2>发布</h2>
-<div><a href="bAnAnAMacReleaseManual.html">macOS 发布说明</a></div>
-<div><a href="WeaselReleaseManual.html">Windows 发布说明</a></div>
-<div><a href="UserQuotes.html">反馈</a></div>
-<div><a href="MoodCollection.html">记事</a></div></nav>
+<div><a href="Downloads.html">安装包</a></div>
+<div><a href="bAnAnAMacReleaseManual.html">macOS 更新频道</a></div>
+<div><a href="WeaselReleaseManual.html">Windows 更新频道</a></div>
+<div><a href="Android.html">Android 发布</a></div>
+<div><a href="iOS.html">iOS 发布</a></div></nav>
 <main>
-<h1>输入方案</h1>
-<p>一份方案描述「这个输入法如何把按键变成字」。小香蕉当前主方案文件是共享目录中的 <code>banana.schema.yaml</code>，方案 id 是 <code>banana</code>。</p>
-<h2>方案里有什么</h2>
-<ul>
-<li><code>schema</code>：id、显示名、版本、依赖的其他方案。</li>
-<li><code>switches</code>：选单里的开关，例如中英、标点、简繁。</li>
-<li><code>engine</code>：处理器、分段器、翻译器、过滤器的名单，按列出的顺序工作。</li>
-<li>拼写、按键绑定、标点、词典引用：决定编码和上屏。</li>
-</ul>
-<p>处理器负责按键。分段器负责把一串编码切成段。翻译器查词典。过滤器改候选顺序或做简繁、表情一类的后处理。调换名单顺序会改变按键被谁先看见。</p>
-<h2>词典</h2>
-<p>词典源文件前半是 YAML 头，后半是码表。码表字段用制表符分隔。方案通过词典名引用它，不把词条抄进方案文件。</p>
-<h2>修改方式</h2>
-<p>不要直接改 SharedSupport 里的 <code>banana.schema.yaml</code>。在 <code>~/Library/bAnAnA/banana.custom.yaml</code> 写 <code>patch</code>。新方案则把完整的 <code>*.schema.yaml</code> 放进用户目录，部署后在选单里启用。</p>
-<p>依赖方案（混合编码、反查、英文等）随主方案列出。缺了依赖，部署日志会报找不到方案或词典。</p>
+<h1>方案包</h1>
+<p>一套方案是一个根目录，不是一个 yaml。挂载、升级、删除都以这个根为单位：</p>
+<pre><code>data/&lt;id&gt;/
+  package.yaml   包 id、显示名、版本
+  rime/          交给 librime 的词库、schema、lua、opencc
+  themes/        .bskin，宿主只读自己那一段
+</code></pre>
+<p>运行时只把 <code>rime/</code> 挂进 mount。<code>package.yaml</code> 和 <code>themes/</code> 不进共享编译目录。</p>
+<table><tbody>
+<tr><th>id</th><th>显示名</th><th>说明</th></tr>
+<tr><td><code>banana</code></td><td>小香蕉</td><td>缺省包。含全拼、双拼、五笔、英文、九键等。不要卸到一个不剩</td></tr>
+<tr><td><code>frost</code></td><td>白霜拼音</td><td>第二包，结构相同</td></tr>
+</tbody></table>
+<p>主方案文件仍是各包 <code>rime/</code> 里的 schema。改打字用用户目录里的 <code>&lt;schema id&gt;.custom.yaml</code> 补丁，不要改安装包里的原件。</p>
+<p>新包整目录丢进该端的方案根（桌面 <code>data/&lt;id&gt;/</code>，手机运行时 <code>packages/&lt;id&gt;/</code>），再部署。源里的 <code>default.yaml</code> 不链进 mount，由宿主按已挂载列表另写。</p>
 </main>
 </div>
 </body>
